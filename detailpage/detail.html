@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino Detail</title>
+    <script src="../js/jquery-3.6.4.min.js"></script>
+
+    <script src="../js/detail.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="./detail.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <script>
+        $(function () {
+
+
+
+            $('.main_logo').click(function () {
+                $(location).attr('href', '../index.html')
+            })
+
+            $('.moreclick .more_open').click(function () {
+                $('.more_list2').slideDown(300);
+                $('.more_open').css('display', 'none');
+                $('.more_close').css('display', 'block');
+
+            })
+            $('.moreclick .more_close').click(function () {
+                $('.more_list2').slideUp(300);
+                $('.more_open').css('display', 'block');
+                $('.more_close').css('display', 'none');
+
+            })
+
+
+
+
+
+        })
+    </script>
+
+</head>
+
+
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="header_wrap">
+                <div class="main_logo">
+                    <img src="../imges/logo_222.jpg" alt="logo">
+                </div>
+                <div class="head_promotion">
+
+                    <div class="line_txt">
+                        <!-- <i class="fas fa-mouse-pointer"></i> 주변매장의 프로모션을 확인해보세요! -->
+                        <ul class="rolling">
+                            <li>신제품 아보카도새우 출시!</li>
+                            <li>등급별 할인 안내</li>
+                            <li>슈퍼마리오 에디션 출시</li>
+                            <li>밖에서 피자 먹을땐 도미노스팟!</li>
+                            <li>도미노 사이드 콤보 특가</li>
+                        </ul>
+                    </div>
+                    <div class="line"></div>
+                </div>
+                <div class="gnb">
+                    <div class="gnb_login"><a href="../subpage/sub.html" target="_blank">로그인</a></div>
+                    <div class="gnb_join"><a href="../joinpage/join.html" target="_blank">회원가입</a></div>
+                    <div class="gnb_language">
+                        <input type="checkbox" id="lang_chk">
+                        <label for="lang_chk" class="lang_open">language <i class="fas fa-plus"></i></label>
+                        <label for="lang_chk" class="lang_close">language <i class="fas fa-minus"></i></label>
+
+                        <div class="gnb_lang_list">
+                            <a href="#!">KOR</a>
+                            <a href="#!">ENG</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--header wrap end-->
+        </div>
+        <!--container end-->
+    </header>
+
+    <nav>
+        <div class="container navcont">
+            <div class="lnb_wrap">
+                <ul class="lnb">
+                    <li><a href="../sub_menu/sub2.html">메뉴</a></li>
+                    <li><a href="../sub_menu/sub2.html">e-쿠폰</a></li>
+                    <li><a href="../sub_menu/sub2.html">상품권 선물</a></li>
+                    <li><a href="../sub_menu/sub2.html">이벤트/제휴</a></li>
+                    <li><a href="../sub_menu/sub2.html">매장검색</a></li>
+                    <li><a href="../sub_menu/sub2.html">가맹점 모집</a></li>
+                    <li class="moreclick">
+                        <div class="more_wrap">
+                            <div class="more_open">
+                                <div class="spanwrap">
+                                    <span class="line1"></span>
+                                    <span class="line2"></span>
+                                    <span class="line3"></span>
+                                </div>
+
+                            </div>
+                            <div class="more_close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <!--more wrap end-->
+
+                    </li>
+                </ul>
+            </div>
+            <!--lnb wrap end-->
+
+
+            <!-- <div class="mobile_nav">
+                <ul>
+                    <li><a href="#!">내정보</a></li>
+                    <li><a href="#!">주문내역 <span>0</span></a></li>
+                    <li><a href="#!">장바구니</a></li>
+                    <li><a href="#!">찜</a></li>
+                    <li><a href="#!">쿠폰함</a></li>
+                </ul>
+            </div> -->
+        </div>
+        <!--container end-->
+        <div class="more_list2">
+            <div class="more_list2_wrap">
+                <div class="more_box">
+                    <a href="#!">도미노 서비스</a>
+                    <ul>
+                        <li><a href="#!">매니아 혜택</a></li>
+                        <li><a href="#!">도미노 모멘트</a></li>
+                        <li><a href="#!">퀵오더</a></li>
+                        <li><a href="#!">단체주문 서비스</a></li>
+                    </ul>
+                </div>
+
+                <div class="more_box">
+                    <a href="#!">고객센터</a>
+                    <ul>
+                        <li><a href="#!">자주하는 질문</a></li>
+                        <li><a href="#!">문의하기</a></li>
+                        <li><a href="#!">칭찬/건의하기</a></li>
+                        <li><a href="#!">공지사항</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="more_box">
+                    <a href="#!">회사소개</a>
+                    <ul>
+                        <li><a href="#!">한국도미노피자</a></li>
+                        <li><a href="#!">광고갤러리</a></li>
+                        <li><a href="#!">사회공헌활동</a></li>
+                        <li><a href="#!">가맹점모집</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--more list wrap end-->
+        </div>
+        <!--more_list end-->
+    </nav>
+
+    <div class="sub_tit">
+        <div class="container">
+            <div class="sub_tit_wrap">
+                <h2>상세메뉴</h2>
+
+                <ul class="sub_nav">
+                    <li><a href="../index.html">홈 ></a></li>
+                    <li><a href="../sub_menu/sub2.html">메뉴 ></a></li>
+                    <li><a href="#!">상세메뉴</a></li>
+                </ul>
+
+
+            </div>
+            <!--sub tit wrap end-->
+        </div>
+        <!--container end-->
+    </div>
+    <!--sub tit end-->
+
+
+    <section class="section01">
+        <div class="container">
+            <div class="section01_wrap">
+                <div class="left_box">
+                    <div class="left_img_wrap">
+                        <img src="../imges/menu01.jpg" alt="img">
+                    </div>
+                    <!--left img wrap-->
+                </div>
+                <!--left box-->
+
+
+                <div class="right_box">
+                    <div class="right_tit">
+                        <h4>슈퍼 디럭스 히어로</h4>
+                        <p>#[도미노x슈퍼 마리오] 마리오와 루이지의 색감을 닮은 알록달록 히어로 피자!</p>
+                    </div>
+                    <!--right tit-->
+
+                    <div class="right_size_wrap">
+                        <h4>사이즈 선택</h4>
+                        <div class="right_size">
+
+                            <input type="radio" name="sizebtn" id="sizebtn1" checked>
+                            <label for="sizebtn1" class="size01">L 29,900원</label>
+
+                        </div>
+                        <!--right size-->
+                    </div>
+                    <!--right size wrap-->
+
+
+                    <div class="right_dow">
+                        <h4>도우 선택</h4>
+                        <ul class="dowwrap">
+                            <li>
+                                <input type="radio" name="dowbtn" id="dowbtn01" value='0'>
+                                <label for="dowbtn01" class="dow01">오리지널 도우</label>
+                                <p class="dow_price">+0</p>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="dowbtn" id="dowbtn02" value="6000">
+                                <label for="dowbtn02" class="dow02">슈퍼시드 화이버 함유 도우(더블 치즈엣지)</label>
+                                <p class="dow_price">+6000</p>
+                            </li>
+
+                            <li>
+                                <input type="radio" name="dowbtn" id="dowbtn03" value="3000">
+                                <label for="dowbtn03" class="dow03">오리지널 도우 (더블 치즈엣지)</label>
+                                <p class="dow_price">+3000</p>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <!--rignt dow-->
+
+
+
+                    <div class="right_topping">
+                        <h4>토핑 선택</h4>
+                        <ul>
+                            <li>
+                                <div class="topping_img">
+                                    <img src="../imges/topping01.jpeg" alt="img">
+                                </div>
+                                <!--topping img-->
+
+                                <div class="topping_txt">
+                                    <p>파인애플 8개/40g<br /><span>500</span></p>
+                                </div>
+
+                                <div class="topping_cnt">
+                                    <button type="button" class="minus_btn">-</button>
+                                    <input type="text" id="toppingCnt" class="topping_cnt1" value="0">
+                                    <button type="button" class="plus_btn">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="topping_img">
+                                    <img src="../imges/topping02.jpeg" alt="img">
+                                </div>
+                                <!--topping img-->
+
+                                <div class="topping_txt">
+                                    <p>올리브 20g<br /><span>300</span></p>
+                                </div>
+
+                                <div class="topping_cnt">
+                                    <button type="button" class="minus_btn">-</button>
+                                    <input type="text" id="toppingCnt" class="topping_cnt2" value="0">
+                                    <button type="button" class="plus_btn">+</button>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <!--right topping end-->
+
+
+                    <div class="side_dish">
+                        <h4>사이드 디쉬</h4>
+                        <ul>
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/sidedetail01.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>아보카도 크림 파스타<br /><span>9800</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt1" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/sidedetail02.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>체다 치즈 치킨<br /><span>9800</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt2" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/sidedetail03.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>치킨 체다 더티 프라이즈<br /><span>4600</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt3" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/sidedetail04.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>칙볼(치킨볼) 파스타<br /><span>9800</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt4" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/drinkdetail01.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>코카콜라 1.25L<br /><span>2300</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt5" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/drinkdetail02.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>스프라이트 1.5L<br /><span>2400</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt6" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/drinkdetail03.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>우리피클<br /><span>800</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt7" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="side_img">
+                                    <img src="../imges/drinkdetail05.jpeg" alt="img">
+                                </div>
+
+                                <div class="side_txt">
+                                    <p>갈릭 디핑 소스 15g<br /><span>200</span></p>
+                                </div>
+
+                                <div class="side_cnt">
+                                    <button type="button" class="side_minus">-</button>
+                                    <input type="text" id="sideCnt" class="side_cnt8" value="0">
+                                    <button type="button" class="side_plus">+</button>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <!--side dish-->
+
+
+
+
+                </div>
+                <!--right box-->
+            </div>
+            <!--section01 wrap-->
+
+
+        </div>
+        <!--container-->
+    </section>
+    <!--section01-->
+
+    <section class="section02">
+        <div class="section02_wrap">
+            <div class="total_order">
+                <div class="total_pizza">
+                    <h4>피자 : </h4>
+                    <p class="pizza_desc"></p>
+                    <p class="dow_desc"></p>
+                </div>
+
+                <div class="total_side">
+                    <h4>사이드 : </h4>
+                    <p class="side_desc"></p>
+                </div>
+
+                <div class="total_drink">
+                    <h4>음료&기타 : </h4>
+                    <p class="drink_desc"></p>
+                </div>
+
+                <div class="total_price">
+                    <p>총금액 : <span class="total_desc"></span> </p>
+                    <div class="total_btn">
+                        주문하기
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- 
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_wrap">
+
+                <div class="footer_L">
+                    <div class="footer_logo_wrap">
+                        <div class="footer_logo">
+                            <img src="../imges/logo.jpg" alt="">
+                        </div>
+                        <div class="phoneno">
+                            <p>1577 - 3082</p>
+                        </div>
+
+                    </div>
+
+                    <ul class="f_lnb">
+                        <li><a href="#!">이용약관</a></li>
+                        <li><a href="#!">개인정보처리방침</a></li>
+                        <li><a href="#!">위치기반서비스</a></li>
+                        <li><a href="#!">청소년보호방침</a></li>
+                        <li><a href="#!">고객센터</a></li>
+                        <li><a href="#!">인재채용</a></li>
+                        <li><a href="#!">가맹점모집</a></li>
+                        <li><a href="#!">단체주문</a></li>
+                    </ul>
+
+                    <div class="footer_desc">
+                        <p>
+                            06223 서울특별시 강남구 역삼로25길 35(역삼동, 청오큐브타워) 청오디피케이㈜｜대표이사 : 오광현,김영훈<br />
+                            사업자 등록번호: 220-81-03371｜통신판매업신고: 강남 5064호｜개인정보 보호책임자 : 이명윤<br />
+                            문의 : webmaster@dominos.co.kr<br />
+                            Copyright ⓒ Domino’s Pizza. All rights reserved.<br />
+                            청오디피케이㈜의 사전 서면동의 없이 도미노피자 사이트(PC, 모바일, 앱)의 일체의 정보, 콘텐츠 및 UI 등을 상업적 목적으로 전재, 전송,
+                            스크래핑 등 무단 사용할 수 없습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer_R">
+                    <div class="footer_language">
+                        <input type="checkbox" id="footchk">
+                        <label for="footchk">Language +</label>
+
+                        <div class="foot_langbox">
+                            <ul>
+                                <li>ENG</li>
+                                <li>KOR</li>
+                            </ul>
+                        </div>
+
+                        <div class="foot_down">
+                            <p>Download App</p>
+                            <a href="#!"><i class="fab fa-apple"></i></a>
+                            <a href="#!"><i class="fab fa-google-play"></i></a>
+                        </div>
+
+                        <div class="footer_sns">
+                            <div class="foot_sns_img">
+                                <img src="../imges/insta.png" alt="img">
+                            </div>
+                            <div class="foot_sns_img">
+                                <img src="../imges/facebook.png" alt="img">
+                            </div>
+                            <div class="foot_sns_img">
+                                <img src="../imges/blog.png" alt="img">
+                            </div>
+                            <div class="foot_sns_img">
+                                <img src="../imges/twitter.png" alt="img">
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="list_award">
+        <div class="container">
+            <div class="list_award_wrap">
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards.png" alt="img">
+                    </div>
+                    <p>식품안전<br /> 경영시스템 인증</p>
+                </div>
+
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards2.png" alt="img">
+                    </div>
+                    <p>지식경제부<br /> 우수디자인 선정</p>
+                </div>
+
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards3.png" alt="img">
+                    </div>
+                    <p>2022년 고객이 가장 추천하는 기업<br /> 피자전문점 부문 10년 연속 1위</p>
+                </div>
+
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards4.png" alt="img">
+                    </div>
+                    <p>2022년 한국산업 고객만족도<br /> 피자전문점 부문 8년 연속 1위</p>
+                </div>
+
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards5.png" alt="img">
+                    </div>
+                    <p>2022 프리미엄브랜드지수<br /> 피자전문점 부문 7년 연속 1위 수상</p>
+                </div>
+
+                <div class="award_box">
+                    <div class="award_img">
+                        <img src="../imges/list_awards6.png" alt="img">
+                    </div>
+                    <p>대학생 1000명이 선택한<br /> 2019 올해의 핫 브랜드 캠퍼스 잡앤조이 선정</p>
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+
+
+
+
+
+    <div class="btn_wrap">
+        <div class="dir_btn">
+            <a href="#!"><i class="fas fa-arrow-up btn_top"></i></a>
+        </div>
+        <div class="dir_btn">
+            <a href="#"><i class="fas fa-arrow-down btn_bot"></i></a>
+        </div>
+    </div>
+    <!--top bottom btn-->
+
+
+
+    <div class="quick_menu">
+        <div class="quick_wrap">
+            <div class="membership">
+                <a href="../order_info/order.html" target="_blank">
+                    <div class="q_img">
+                        <img src="../imges/membership.png" alt="img">
+                    </div>
+
+                    <p>내정보</p>
+                </a>
+            </div>
+
+            <div class="membership">
+                <a href="../order_info/order.html" target="_blank">
+                    <div class="q_img">
+                        <img src="../imges/orderlist.png" alt="img">
+                    </div>
+
+                    <p>주문내역</p>
+                </a>
+            </div>
+
+            <div class="membership">
+                <div class="q_img">
+                    <i class="far fa-heart"></i>
+                </div>
+
+                <p>찜<span id="likecnt">0</span></p>
+            </div>
+
+            <div class="membership">
+                <div class="q_img">
+                    <img src="../imges/icon_cart.png" alt="img">
+                </div>
+
+                <p>장바구니<span id="cartcnt">0</span></p>
+            </div>
+
+            <div class="membership">
+                <div class="q_img">
+                    <img src="../imges/couponimg.png" alt="img">
+                </div>
+
+                <p>쿠폰함</p>
+            </div>
+
+
+
+        </div>
+    </div>
